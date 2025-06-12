@@ -1,5 +1,6 @@
 const { google } = require('googleapis');
-const { generateTasks, distributeTasks } = require('../utils/helpers');
+const path = require('path'); 
+const { generateTasks, distributeTasks } = require('../utils/helpers.cjs');
 
 // Google Sheets connection setup
 async function connectToSheets() {
